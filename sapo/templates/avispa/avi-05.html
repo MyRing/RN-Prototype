@@ -1,0 +1,166 @@
+{% extends 'index.html' %}
+{% block title %}<title>Avispa</title>{% endblock %}
+
+{% block crumb %}
+<button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button>
+<!-- <button type="button" class="btn btn-default">Local Ring</button> -->
+
+{% endblock crumb%}
+
+{% block content %}
+
+
+<!-- START NEW CONTENT --> 
+
+
+<section class="bp-20 p-50">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-9">  
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="rn-box-title">
+                            <strong>@MTV_network</strong>
+                            
+
+                            <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#helpmodal">
+                            <i class="fa fa-question-circle"></i>
+                            </button>
+                            
+
+                            
+
+                            
+
+                        </div>
+                        <div class="rn-box-solo">
+                            <div class="pull-right rn-t3 text-right">
+                                <i class="fa fa-circle-o fa-2x" style="color:#CCC; padding:0 10px;"></i>
+                            </div>
+                        
+                            <div class="pull-right rn-t3 text-right">--
+                            </div>
+                            <div class="rn-t2">05</div>
+
+                            
+                        </div>
+                        <!-- <div class="rn-box-space">
+                            
+                                <div class="rn-b1">123</div>
+                            
+                        </div> -->
+                        <div class="rn-box-content">
+                            
+                         
+                         <h2 class="text-muted"> Search </h2>
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Search</label>
+                                    <div class="col-sm-10">
+                                      <input type="email" class="form-control" id="inputEmail3" placeholder="Deluxe Room">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label">In this Ring</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control">
+                                          <option>::Select one::</option>
+                                          <option>Room Images</option>
+                                          <option>360 Panoramas</option>
+                                          <option>Room Descriptions</option>
+                                          <option>[All Rings]</option>
+                                        </select>                                                                           
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label">Created</label>
+                                    <label class="col-sm-2 control-label">between</label>
+                                    <div class="col-sm-7">
+                                        <div class="input-daterange input-group" id="datepicker">
+                                            <input type="text" class="input-sm form-control" name="start" />
+                                            <span class="input-group-addon"> and </span>
+                                            <input type="text" class="input-sm form-control" name="end" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label">Modified</label>
+                                    <label class="col-sm-2 control-label">between</label>
+                                    <div class="col-sm-7">
+                                        <div class="input-daterange input-group" id="datepicker">
+                                            <input type="text" class="input-sm form-control" name="start" />
+                                            <span class="input-group-addon"> and </span>
+                                            <input type="text" class="input-sm form-control" name="end" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label">With field</label>
+                                    
+                                    <div class="col-sm-10">
+                                        <table cellspacing="10">
+                                            <tr>
+                                                <td><input type="text" class="input-sm form-control" /></td>
+                                                <td>
+                                                    <select class="form-control">
+                                                  <option> = </option>
+                                                  <option> > </option>
+                                                  <option> < </option>
+                                                  <option> != </option>
+                                                    </select>  
+                                                </td>
+                                                <td><input type="text" class="input-sm form-control" /></td>
+                                            </tr>
+                                        </table>             
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label">Ring Query</label>
+                                    <div class="col-sm-10">
+                                      <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label"></label>
+                                    <div class="col-sm-10">
+                                        <a href="01" type="submit" class="btn btn-primary">Search This</a>
+                                    </div>
+                                </div>
+                            </form>        
+                        
+                            
+                        </div><!-- //close box content -->
+                        
+                    </div><!-- close 12 -->   
+                </div> <!-- close row -->
+
+            </div> <!-- close 9 -->
+            <div class="col-sm-3">
+                <div class="rn-box-space">
+                            <strong>ToolBar </strong>
+
+                            <button type="button" class="btn btn-default btn-xs" style="float:right;">
+                            <i class="fa fa-question-circle"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-xs" style="float:right;">
+                            <i class="fa fa-wrench"></i>
+                            </button>
+
+                </div>
+                <div class="rn-box-content">
+                
+                    <p>Tools, one click away</p>
+
+                </div>
+            </div>    
+
+        </div>
+    </div>
+</section>
+
+
+{% endblock content%}

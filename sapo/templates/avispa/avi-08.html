@@ -1,0 +1,60 @@
+{% extends 'avispa/avi-B.html' %}
+{% load static %}
+
+{% block form-0 %}      
+                    @Hilton-Times-Square
+{% endblock%}                            
+
+
+{% block form-1 %}
+                     <img style="width:150px;" src="{% static 'images/bea.jpg' %}" class="img-thumbnail" >
+{% endblock%}
+
+{% block form-2 %}
+            <dl class="dl-horizontal text-left">
+                      <dt>Name:</dt>
+                      <dd>Sunsetroom1.jpg</dd>
+
+                      <dt>Format:</dt>
+                      <dd>JPG</dd>
+
+                      <dt>Width:</dt>
+                      <dd>900px</dd>
+
+                      <dt>Height:</dt>
+                      <dd>400px</dd>
+             </dl> 
+{% endblock%}
+
+
+{% block form-3 %}
+                     <input type="email" class="form-control" id="inputEmail3" placeholder="Deluxe Room">
+{% endblock%}
+
+                                       
+{% block form-4 %}  
+                      <textarea class="form-control" rows="4">Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.
+                      </textarea>     
+{% endblock%}
+
+                                    
+{% block form-5 %}
+                     <div class="well well-sm">
+                    <span class="label label-success rn-mar5"> Deluxe Room <i class="fa fa-times"></i> </span>
+                    <span class="label label-success rn-mar5"> Jacuzzi <i class="fa fa-times"></i> </span>
+                    <span class="label label-success rn-mar5"> Ocean View <i class="fa fa-times"></i> </span>
+                    <span class="label label-warning rn-mar5"> Hotels <i class="fa fa-times"></i> </span>
+                    <span class="label label-warning rn-mar5"> Room Images <i class="fa fa-times"></i> </span>
+                    <span class="label label-warning rn-mar5"> Space stations<i class="fa fa-times"></i> </span>
+                    </div>
+{% endblock%}
+
+
+{% block form-6 %}
+                    <a href="01" type="submit" class="btn btn-primary">Save</a>
+
+
+                    <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                         Delete This
+                    </button>
+{% endblock%}

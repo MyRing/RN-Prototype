@@ -1,0 +1,122 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}<title>Avispa</title>{% endblock %}
+
+{% block crumb %}
+<button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button>
+<button type="button" class="btn btn-default">Local Ring</button>
+
+{% endblock crumb%}
+
+{% block content %}
+
+
+<!-- START NEW CONTENT --> 
+
+
+<section class="bp-20 p-50">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-9">  
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="rn-box-title">
+                            <strong>Search Results</strong>
+                            
+
+                            
+
+                            <div class="btn-toolbar pull-right" role="toolbar">
+                                <div class="btn-group">
+                                    <a href="05" type="button" class="btn btn-default btn-xs">
+                                    <i class="fa fa-arrow-left"></i>
+                                    </a>
+                                    <a href="" type="button" class="btn btn-default btn-xs">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#helpmodal">
+                                        <i class="fa fa-question-circle"></i>
+                                    </button>
+                                </div>
+                              
+                            </div>
+
+                            
+
+                        </div>
+                        
+                        <div class="rn-box-solo">
+                            <h5 style="line-height:25px;">
+                            <span class="text-success rn-mar5">Contains: </span>
+                            <span class="label label-success rn-mar5"> Deluxe Room <i class="fa fa-times"></i> </span>
+                            <span class="label label-success rn-mar5"> Jacuzzi <i class="fa fa-times"></i> </span>
+                            <span class="label label-success rn-mar5"> Ocean View <i class="fa fa-times"></i> </span>
+                            <span class="label label-success rn-mar5"> Luxury <i class="fa fa-times"></i> </span>
+                            <span class="label label-success rn-mar5"> Lujo <i class="fa fa-times"></i> </span>
+                            
+                            <span class="text-warning rn-mar5">Rings: </span>
+                            
+                            <span class="label label-warning rn-mar5"> Hotels <i class="fa fa-times"></i> </span>
+                            <span class="label label-warning rn-mar5"> Room Images <i class="fa fa-times"></i> </span>
+                            <span class="label label-warning rn-mar5"> Space stations<i class="fa fa-times"></i> </span>
+                            
+                            <span class="text-info rn-mar5">Specs: </span>
+                            <span class="label label-info rn-mar5"> width= 200px <i class="fa fa-times"></i> </span>
+                            <span class="label label-info rn-mar5"> licence= CC <i class="fa fa-times"></i> </span>
+                            
+                            <span class="text-default rn-mar5">Created: </span>
+                            <span class="label label-default rn-mar5"> BEF : 2014-03-12 <i class="fa fa-times"></i> </span>
+                            
+                            <span class="label label-default rn-mar5">AFT : 2014-09-22 <i class="fa fa-times"></i> </span>
+                            </h5>
+                            
+                        </div>
+                        
+
+                        {% block result1 %}
+
+                                <!-- HERE LIST OR ICON VIEW -->
+
+                        {% endblock %}
+                        
+
+
+                    </div><!-- close 12 -->   
+                </div> <!-- close row -->
+
+            </div> <!-- close 9 -->
+            <div class="col-sm-3">
+                <div class="rn-box-space">
+                            <strong>ToolBar </strong>
+
+                            <button type="button" class="btn btn-default btn-xs" style="float:right;">
+                            <i class="fa fa-question-circle"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-xs" style="float:right;">
+                            <i class="fa fa-wrench"></i>
+                            </button>
+
+                </div>
+                <div class="rn-box-content">
+                
+                    <p>Tools, one click away</p>
+
+                </div>
+            </div>    
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+{% endblock %}
