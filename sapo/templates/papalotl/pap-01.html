@@ -1,0 +1,156 @@
+{% extends 'index.html' %}
+{% block title %}<title>Papalotl</title>{% endblock %}
+
+{% block crumb %}
+<button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button>
+<button type="button" class="btn btn-default">Local Ring</button>
+
+{% endblock crumb%}
+
+{% block content %}
+
+
+<!-- START NEW CONTENT --> 
+
+
+<section class="bp-20 p-50">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-9">  
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="rn-box-title">
+
+              <button type="button" class="btn btn-default btn-xs pull-right">
+              <i class="fa fa-question-circle"></i>
+              </button>
+
+              <a href="05" type="button" class="btn btn-default btn-xs pull-right">
+              <i class="fa fa-search"></i> SEARCH
+              </a>
+
+              <h2 class="title test123">Select a filter </h2>
+                <p class="lead">Bususud</p>
+            </div>
+            <div class="rn-box-space">             
+            </div>
+  
+                        
+            <div class="rn-box-content">
+              <table class="table"> <!-- inner row -->
+                <tr>
+                  <td width="10%"> 
+                    <div class="rn-box-solox">
+
+                      <p>Filters for:</p> 
+
+                      <svg height="70" width="75" >
+                      
+                      <circle cx="42" cy="36" r="30" stroke="#DDD" stroke-width="4" fill="none" />
+                      <circle cx="40" cy="35" r="30" stroke="orange" stroke-width="2" fill="none" />
+                      
+                      </svg>
+                      <br/>
+                      <div class="text-center"> &deg;Room-Images </div>
+                    </div>  
+                  </td>
+                  <td> 
+                    <span class="rn-box-solo" style="">
+                      <span class="label label-default rn-mar5"> 
+                        Filter 1
+                      </span>
+
+                      Search by Metadata
+
+
+                      <span class="btn-group">
+                        <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                           <i class="fa fa-question-circle"></i> Sources
+                        </button>
+
+                          <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
+                      </span>
+                      
+                    </span>
+                      
+                    <span class="rn-box-solo" style="">
+                      <span class=""> 
+                        <input type="checkbox" name="switch01" checked data-size="small" data-on-text="ON1" data-off-text="OFF">
+                      </span>
+                      
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </div><!-- //close box -->
+            <div class="">
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="disable"><a href="#">2</a></li>
+                <li class="disable"><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div><!-- close 12 -->   
+        </div> <!-- close row -->
+
+      </div> <!-- close 9 -->
+      <div class="col-sm-3">
+        <div class="rn-box-space">
+          <strong>ToolBar </strong>
+
+          <button type="button" class="btn btn-default btn-xs" style="float:right;">
+          <i class="fa fa-question-circle"></i>
+          </button>
+          <button type="button" class="btn btn-success btn-xs" style="float:right;">
+          <i class="fa fa-wrench"></i>
+          </button>
+
+        </div>
+        <div class="rn-box-content">
+          <p>Tools, one click away</p>
+
+        </div>
+      </div>    
+    </div>
+  </div>
+</section>
+
+
+<!-- Filter Modal -->
+<div class="modal fade" id="filtermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sources</h4>
+      </div>
+      <div class="modal-body">
+            
+            
+            <i class="fa fa-question-circle fa-2x"></i>
+                <h5> Select your sources for</h5>
+
+                <input type="email" class="form-control" id="inputEmail3" placeholder="">
+
+
+
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal end -->
+
+
+
+
+{% endblock %}
