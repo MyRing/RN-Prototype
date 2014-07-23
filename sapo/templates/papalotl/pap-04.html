@@ -1,0 +1,147 @@
+{% extends 'papalotl/pap-A.html' %}
+{% load static %}
+
+{% block panel0 %}
+algo aqui
+{% endblock %}
+
+{% block panel1 %}
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Filter 1: Image Format
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in"> <!-- add "in" to have it open -->
+                    <div class="panel-body">
+                      
+                      <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Label</label>
+                          <div class="col-sm-10">
+                              
+                                <input type="text" name="" class="form-control" id="" placeholder="Search by Metadata">
+
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Widget</label>
+                          <div class="col-sm-10">
+                              <select class="form-control">
+                                <option>::Select Widget::</option>
+                                <option>Room Images</option>
+                                <option>360 Panoramas</option>
+                                <option>Room Descriptions</option>
+                                <option>[All Rings]</option>
+                              </select> 
+
+                              <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#findFilter"> <span class="glyphicon glyphicon-zoom-in"></span>FIND OTHER</button> 
+                              <br/>
+                          </div>
+                        </div>              
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Source 1</label>
+                          <div class="col-sm-10">
+                            <input type="text" name="" class="form-control" id="" placeholder="http://global.myring.io/all/imageFormats/name#"> 
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Source Transform</label>
+                          <div class="col-sm-10">
+                            <textarea class="form-control textcodearea" rows="6">
+foreach(source1 as value){
+  CapFormat[] = capitalize(value)
+  }
+return Capformat
+                            </textarea> 
+                             <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#testTransform"> Test transform </button>
+
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Required</label>
+                          <div class="col-sm-10">
+                            <div><input type="checkbox" name="X" value="X" data-on-text="ON" data-off-text="OFF" checked> <span class="text-muted">(Required field for search)</span></div>
+
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label"><span class="text-muted">(Rule 1)</span></label>
+                          <div class="col-sm-10">
+                            <div class="rules-box">
+          
+                                <div class="input-group">
+                                  <div class="input-group-addon">Rules</div>
+                                  <input class="form-control" type="email" placeholder="Add rules here">
+                                </div>
+                              
+                                
+                                  <span class="label label-default rn-mar5"> Space stations<i class="fa fa-times"></i> </span>
+                                
+                                <br/><br/>
+                                <div class="input-group">
+                                  <div class="input-group-addon">Message</div>
+                                  <input class="form-control" type="email" placeholder="Please select just one">
+                                </div>
+                            </div>
+                         
+                              <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#fieldPreview"> Preview this field </button>  
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label"><span class="text-muted">(Rule 2)</span></label>
+                          <div class="col-sm-10">
+                            <div class="rules-box">
+            
+                              <div class="input-group">
+                                <div class="input-group-addon">Rules</div>
+                                <input class="form-control" type="email" placeholder="Add rules here">
+                              </div>
+                            
+                              
+                                <span class="label label-default rn-mar5"> Space stations<i class="fa fa-times"></i> </span>
+                              
+                              <br/><br/>
+                              <div class="input-group">
+                                <div class="input-group-addon">Message</div>
+                                <input class="form-control" type="email" placeholder="Please select just one">
+                              </div>
+                            </div>
+                        
+
+                            <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#fieldPreview"> Preview this field</button> 
+
+                            <br/>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label"></label>
+                          <div class="col-sm-10">
+                            
+                            <button type="button" class="btn btn-vader btn-xs pull-right" data-toggle="modal" data-target="#fieldPreviewAll"> Preview All Fields</button> 
+                          </div>
+                        </div>
+                        <hr/>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label"><span class="glyphicon glyphicon-exclamation-sign text-muted"><br/></span> <span class="text-muted">Not saved</span>
+                          </label>
+                          <div class="col-sm-10">
+                            <a href="00" type="submit" class="btn btn-default btn-xs">Save</a>
+
+                          </div>
+                        </div>
+
+                      </form> 
+
+                    </div>
+                  </div>
+                </div>
+{% endblock %}
+<!-- panel-1 CLOSE-->
+
+

@@ -30,14 +30,28 @@ a:hover{color:#000; text-decoration:underline;  -o-transition:.3s; -ms-transitio
 /* RING */
 /*MyRing green: #D9E021*/
 
+
+.rn-pad20{padding:20px;}
+
+
+
 .bp-20{padding:0 0 5px 0 }
 .ring-bc{color:#D9E021; font-weight:bold; }
 .rn-bold{font-weight:bold; }
+
 .bt-crumb{margin: 0px 0; background-color:#CCC;}
 .bt-crumb:hover {
 margin-top: 0px;
 background-color:#CCC;
 }
+
+.btn-vader{margin: 0px 0; background-color:#000; color:#CCC;}
+.btn-vader:hover {
+margin-top: 0px;
+background-color:#999;
+color:#FFF;
+}
+
 
 .rn-mar5{margin:5px}
 
@@ -45,9 +59,25 @@ background-color:#CCC;
 background-color: #CCC;
 }
 
+.textcodearea { font-family: Consolas, Lucida Console, monospace; font-size: 0.9em; }
+
+.rules-box {
+    border-top-style: dotted;
+    border-right-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-color:#CCC;
+    border-width:1px 1px 1px 6px;
+    padding:5px;
+    background-color:#FFF;
+
+}
+
 .rn-b1{font-size: 20px;}
 .rn-b2{font-size: 25px;}
 .rn-b3{font-size: 30px;}
+.rn-b4{font-size: 50px;}
+
 
 .nounder{text-decoration: none !important;}
 .rn-t1{font-size: 17px;}

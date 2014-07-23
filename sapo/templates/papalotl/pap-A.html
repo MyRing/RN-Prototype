@@ -1,118 +1,313 @@
 {% extends 'index.html' %}
 {% load static %}
 
-{% block title %}<title>Avispa</title>{% endblock %}
+{% block title %}<title>PAPALOTLA</title>{% endblock %}
 
 {% block crumb %}
 <button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button>
-<button type="button" class="btn btn-default">Local Ring</button>
+<button type="button" class="btn btn-default">pap-A</button>
 
 {% endblock crumb%}
 
 {% block content %}
 
 
-<!-- START NEW CONTENT --> 
+<div class="row">
+          <div class="col-sm-12">
+            <div class="rn-box-title">
+
+              <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#helpmodal">
+               <i class="fa fa-question-circle"></i>
+              </button>
+              
+
+              <h2 class="title">New Filter</h2>
+            </div>
+            <div class="rn-box-space">  
+                  <div class="row">
+                    <div class="col-sm-12 text-left">
+                      
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cloneFilter"> <i class="fa fa-share-alt fa-2x"></i><span class="rn-pad20">Clone Existing Filter</span> </button> 
+
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="btn btn-success btn-md"> <i class="fa fa-share fa-2x"></i><span class="rn-pad20">Create new Filter </a> 
+                    </div>
+                  </div> 
+            </div>
+  
+                        
+            <div class="rn-box-content">
+              <p class="lead">Input Fields</p> 
+
+              <!-- accordion Start -->
+              <div class="panel-group" id="accordion">
 
 
-<section class="bp-20 p-50">
-    <div class="container">
-        <div class="row">
+                <!-- Panel 1-->
+                {% block panel1 %}
+                  <!-- find this piece of code at pap-04.html -->
+                {% endblock %}
+
+                <!-- panel-2 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        Filter 2
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      other filter
+                    </div>
+                  </div>
+                </div>
+
+                <!-- panel-3 -->
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Filter 3
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      other filter
+                    </div>
+                  </div>
+                </div>
+
+              </div><!-- //Accordion ends -->
+
+              
+                <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#fieldPreview"> NEXT </button> 
+
+              <br/><br/><br/>               
+            </div><!-- //close box -->
+
+
+            <div class="">
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="disable"><a href="#">2</a></li>
+                <li class="disable"><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div><!-- close 12 -->   
+        </div> <!-- close row -->
+
+
+
+
+{% endblock %}
+
+{% block modals %}
+
+<!-- //////////////////////////////////////////////////////////////////////////////-->
+<!-- PAPALOTL MODALS-->
+<!-- //////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- FilterModal MODAL  (Belongs to "pap-01.html")-->
+<div class="modal fade" id="filtermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sources</h4>
+      </div>
+      <div class="modal-body">
             
-            <div class="col-md-9">  
+            
+                <div class="pull-right"><h3 class="title">&deg;LobbyImages</h3></div>
+                <h3 class="lead"> Select your sources for</h3>
 
 
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="rn-box-title">
-                            <strong>Search Results</strong>
-                            
+                <hr/>
+                Source 1 URL:
+                <input type="email" class="form-control" id="" placeholder="http://global.myring.io/hilton/roomimages#">
 
-                            
+                <br/>
+                Source 2 URL:
+                <input type="email" class="form-control" id="" placeholder="http://global.myring.io/starwood/roomimages#">
 
-                            <div class="btn-toolbar pull-right" role="toolbar">
-                                <div class="btn-group">
-                                    <a href="05" type="button" class="btn btn-default btn-xs">
-                                    <i class="fa fa-arrow-left"></i>
-                                    </a>
-                                    <a href="" type="button" class="btn btn-default btn-xs">
-                                        <i class="fa fa-refresh"></i>
-                                    </a>
-                                </div>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#helpmodal">
-                                        <i class="fa fa-question-circle"></i>
-                                    </button>
-                                </div>
-                              
-                            </div>
+                <br/>
+                Source 3 URL:
+                <input type="email" class="form-control" id="" placeholder="http://global.myring.io/bestwest/roomimages#">
 
-                            
+                <br/>
+                <button type="button" class="btn btn-default btn-xs" style="float:right;">
+                  New Source
+                </button>
 
-                        </div>
-                        
-                        <div class="rn-box-solo">
-                            <h5 style="line-height:25px;">
-                            <span class="text-success rn-mar5">Contains: </span>
-                            <span class="label label-success rn-mar5"> Deluxe Room <i class="fa fa-times"></i> </span>
-                            <span class="label label-success rn-mar5"> Jacuzzi <i class="fa fa-times"></i> </span>
-                            <span class="label label-success rn-mar5"> Ocean View <i class="fa fa-times"></i> </span>
-                            <span class="label label-success rn-mar5"> Luxury <i class="fa fa-times"></i> </span>
-                            <span class="label label-success rn-mar5"> Lujo <i class="fa fa-times"></i> </span>
-                            
-                            <span class="text-warning rn-mar5">Rings: </span>
-                            
-                            <span class="label label-warning rn-mar5"> Hotels <i class="fa fa-times"></i> </span>
-                            <span class="label label-warning rn-mar5"> Room Images <i class="fa fa-times"></i> </span>
-                            <span class="label label-warning rn-mar5"> Space stations<i class="fa fa-times"></i> </span>
-                            
-                            <span class="text-info rn-mar5">Specs: </span>
-                            <span class="label label-info rn-mar5"> width= 200px <i class="fa fa-times"></i> </span>
-                            <span class="label label-info rn-mar5"> licence= CC <i class="fa fa-times"></i> </span>
-                            
-                            <span class="text-default rn-mar5">Created: </span>
-                            <span class="label label-default rn-mar5"> BEF : 2014-03-12 <i class="fa fa-times"></i> </span>
-                            
-                            <span class="label label-default rn-mar5">AFT : 2014-09-22 <i class="fa fa-times"></i> </span>
-                            </h5>
-                            
-                        </div>
-                        
-
-                        {% block result1 %}
-
-                                <!-- HERE LIST OR ICON VIEW -->
-
-                        {% endblock %}
-                        
-
-
-                    </div><!-- close 12 -->   
-                </div> <!-- close row -->
-
-            </div> <!-- close 9 -->
-            <div class="col-sm-3">
-                <div class="rn-box-space">
-                            <strong>ToolBar </strong>
-
-                            <button type="button" class="btn btn-default btn-xs" style="float:right;">
-                            <i class="fa fa-question-circle"></i>
-                            </button>
-                            <button type="button" class="btn btn-success btn-xs" style="float:right;">
-                            <i class="fa fa-wrench"></i>
-                            </button>
-
-                </div>
-                <div class="rn-box-content">
-                
-                    <p>Tools, one click away</p>
-
-                </div>
-            </div>    
-
-        </div>
+                <hr/>
+                Save this source combo as:
+                <input type="email" class="form-control" id="" placeholder="DC Hotel Chains">
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
     </div>
-</section>
+  </div>
+</div>
+
+
+<!--  findFilter MODAL (Belongs to "pap-04.html")-->
+<div class="modal fade" id="findFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Find Widget</h4>
+      </div>
+      <div class="modal-body">
+                Type its name or URI here
+                <input type="email" class="form-control" id="" placeholder="http://global.myring.io/hilton/roomimages#">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Find</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  testTransform MODAL (Belongs to pap-04)--> 
+<div class="modal fade" id="testTransform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Transform Test</h4>
+      </div>
+      <div class="modal-body">
+            <div class="rules-box" style="border-color:green;">
+           		<h3>Before1</h3>
+           	</div>
+           	<br/>
+           	<div class="rules-box" style="border-color:red;">
+          		 <h3>After2</h3>
+          	</div>	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Find</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  cloneFilter MODAL (Belongs to pap-04)--> 
+<div class="modal fade" id="cloneFilter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Clone existing Filter</h4>
+      </div>
+      <div class="modal-body">
+            If you want to CLONE an existing filter for something else just type the URI of the original one.
+           	<br/>
+           	<input type="text" class="form-control" id="" placeholder="http://f.myring.io/searchbyMetadata#">	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Find</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  fieldPreview MODAL (Belongs to pap-04)--> 
+<div class="modal fade" id="fieldPreview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Field Preview</h4>
+      </div>
+      <div class="modal-body">
+            
+        <div class="rules-box" style="border-color:orange;">
+        		<span class="lead" style="color:orange;"><i class="fa fa-warning"></i>This is a preview:</span>
+        		<br/><br/>
+
+           	<select class="form-control">
+                        <option>::Select Widget::</option>
+                        <option>Room Images</option>
+                        <option>360 Panoramas</option>
+                        <option>Room Descriptions</option>
+                        <option>[All Rings]</option>
+            </select> 
+
+            <br/><br/>
+        </div>    	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Find</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  fieldPreviewAll MODAL (Belongs to pap-04)--> 
+<div class="modal fade" id="fieldPreviewAll" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Preview All Fields</h4>
+      </div>
+      <div class="modal-body">
+            
+        <div class="rules-box" style="border-color:orange;">
+        		<span class="lead" style="color:orange;"> <i class="fa fa-warning"></i> This is a preview:</span>
+        		<br/><br/>
+
+            <form role="form">
+						  <div class="form-group">
+						    <label>Field X</label>
+						    <input type="text" class="form-control" id="" placeholder="XX">
+						  </div>
+						  <div class="form-group">
+						    <label >Field Y</label>
+						    <input type="text" class="form-control" id="" placeholder="YY">
+						  </div>
+						  <div class="form-group">
+						    <label >Field Z</label>
+						    <input type="text" class="form-control" id="" placeholder="YY">
+						  </div>
+						  
+						  
+						  
+						</form>
+
+            <br/><br/>
+        </div>    	 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Find</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
 
@@ -120,3 +315,6 @@
 
 
 {% endblock %}
+<!-- modal end -->
+
+

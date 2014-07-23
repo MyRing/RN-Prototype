@@ -1,11 +1,11 @@
 {% extends 'index.html' %}
-{% block title %}<title>Papalotl</title>{% endblock %}
+{% block title %}   PAPALOTL   {% endblock %}
 
 {% block crumb %}
 <button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button>
 <button type="button" class="btn btn-default">Local Ring</button>
 
-{% endblock crumb%}
+{% endblock %}
 
 {% block content %}
 
@@ -30,60 +30,218 @@
               <i class="fa fa-search"></i> SEARCH
               </a>
 
-              <h2 class="title test123">Select a filter </h2>
-                <p class="lead">Bususud</p>
+              <h2 class="title">Ring Filters</h2>
+                <p class="lead">Select one or more filters</p>
             </div>
             <div class="rn-box-space">             
             </div>
   
                         
             <div class="rn-box-content">
+
+            <br/>
+
               <table class="table"> <!-- inner row -->
                 <tr>
-                  <td width="10%"> 
-                    <div class="rn-box-solox">
-
-                      <p>Filters for:</p> 
-
-                      <svg height="70" width="75" >
+                  
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">     
+                      <svg height="70" width="75">
                       
                       <circle cx="42" cy="36" r="30" stroke="#DDD" stroke-width="4" fill="none" />
                       <circle cx="40" cy="35" r="30" stroke="orange" stroke-width="2" fill="none" />
                       
                       </svg>
-                      <br/>
-                      <div class="text-center"> &deg;Room-Images </div>
-                    </div>  
-                  </td>
-                  <td> 
-                    <span class="rn-box-solo" style="">
-                      <span class="label label-default rn-mar5"> 
-                        Filter 1
-                      </span>
 
-                      Search by Metadata
+                      <div class="pull-right"><h3 class="title">&deg;RoomImages</h3></div>
 
+                    </div>
+                  <!-- endfilter  -->
 
-                      <span class="btn-group">
-                        <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
-                           <i class="fa fa-question-circle"></i> Sources
-                        </button>
-
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">     
+                      <span class="label label-default rn-mar5"> Filter <strong>1</strong></span>
+                      <span style="margin:0 50px;">Search by Metadata</span>
+                      <div class="btn-group pull-right">
+                        <span class="btn-group ">
                           <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
-                      </span>
+                          <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                             USE
+                          </button>
+                          
+                        </span>
+                        <span style="padding-left:20px;">
+                          <input type="checkbox" name="switch01" checked data-size="mini" data-on-text="ON" data-off-text="OFF">
+                        </span> 
+                      </div>
+
+                    </div>
+                  <!-- endfilter  --> 
+
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">   
+
+                      <span class="label label-default rn-mar5"> Filter <strong>2</strong></span>
+                      <span style="margin:0 50px;">Search by Format</span>
+                      <div class="btn-group pull-right">
+                        <span class="btn-group ">
+                          <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
+                          <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                             USE
+                          </button>
+                        </span>
+                        <span style="padding-left:20px;">
+                          <input type="checkbox" name="switch01" checked data-size="mini" data-on-text="ON" data-off-text="OFF">
+                        </span> 
+                      </div>
+
+                    </div>
+                  <!-- endfilter  --> 
+
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">     
+                      <span class="label label-default rn-mar5"> Filter <strong>3</strong></span>
+                      <span style="margin:0 50px;">Search by Keyword</span>
+                      <div class="btn-group pull-right">
+                        <span class="btn-group ">
+                          <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
+                          <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                             USE
+                          </button>
+                        </span>
+                        <span style="padding-left:20px;">
+                          <input type="checkbox" name="switch01" data-size="mini" data-on-text="ON" data-off-text="OFF" checked>
+                        </span> 
+                      </div>
+
+                    </div>
+                  <!-- endfilter  --> 
+
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">     
+                      <span class="label label-default rn-mar5"> Filter <strong>4</strong></span>
+                      <span style="margin:0 50px;">Search by bla</span>
+                      <div class="btn-group pull-right">
+                        <span class="btn-group ">
+                          <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
+                          <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                             USE
+                          </button>
+                        </span>
+                        <span style="padding-left:20px;">
+                          <input type="checkbox" name="switch01" data-size="mini" data-on-text="ON" data-off-text="OFF">
+                        </span> 
+                      </div>
+
+                    </div>
+                  <!-- endfilter  --> 
+
+                  </td>
+                </tr>
+              </table>
+
+
+            
+              <table class="table"> <!-- inner row -->
+                <tr>
+                  
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">     
+                      <svg height="70" width="75">
                       
-                    </span>
+                      <circle cx="42" cy="36" r="30" stroke="#DDD" stroke-width="4" fill="none" />
+                      <circle cx="40" cy="35" r="30" stroke="orange" stroke-width="2" fill="none" />
                       
-                    <span class="rn-box-solo" style="">
-                      <span class=""> 
-                        <input type="checkbox" name="switch01" checked data-size="small" data-on-text="ON1" data-off-text="OFF">
-                      </span>
-                      
-                    </span>
+                      </svg>
+
+                      <div class="pull-right"><h3 class="title">&deg;LobbyImages</h3></div>
+
+                    </div>
+                  <!-- endfilter  -->
+
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">     
+                      <span class="label label-default rn-mar5"> Filter <strong>1</strong></span>
+                      <span style="margin:0 50px;">Search by frigobar size</span>
+                      <div class="btn-group pull-right">
+                        <span class="btn-group ">
+                          <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
+                          <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                             USE
+                          </button>
+                        </span>
+                        <span style="padding-left:20px;">
+                          <input type="checkbox" name="switch01" checked data-size="mini" data-on-text="ON" data-off-text="OFF">
+                        </span> 
+                      </div>
+
+                    </div>
+                  <!-- endfilter  --> 
+
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">   
+
+                      <span class="label label-default rn-mar5"> Filter <strong>2</strong></span>
+                      <span style="margin:0 50px;">Search by pool availability</span>
+                      <div class="btn-group pull-right">
+                        <span class="btn-group ">
+                          <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
+                          <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                             USE
+                          </button>
+                        </span>
+                        <span style="padding-left:20px;">
+                          <input type="checkbox" name="switch01" data-size="mini" data-on-text="ON" data-off-text="OFF">
+                        </span> 
+                      </div>
+
+                    </div>
+                  <!-- endfilter  --> 
+
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">     
+                      <span class="label label-default rn-mar5"> Filter <strong>3</strong></span>
+                      <span style="margin:0 50px;">Search by Resolution</span>
+                      <div class="btn-group pull-right">
+                        <span class="btn-group ">
+                          <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
+                          <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                             USE
+                          </button>
+                        </span>
+                        <span style="padding-left:20px;">
+                          <input type="checkbox" name="switch01" data-size="mini" data-on-text="ON" data-off-text="OFF" checked>
+                        </span> 
+                      </div>
+
+                    </div>
+                  <!-- endfilter  --> 
+
+                  <!-- filter -->
+                    <div class="rn-box-solo" style="padding:12px;">     
+                      <span class="label label-default rn-mar5"> Filter <strong>4</strong></span>
+                      <span style="margin:0 50px;">Search by Season</span>
+                      <div class="btn-group pull-right">
+                        <span class="btn-group ">
+                          <a href="05" type="button" class="btn btn-default btn-xs pull-right">EDIT</a>
+                          <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#filtermodal">
+                             USE
+                          </button>
+                        </span>
+                        <span style="padding-left:20px;">
+                          <input type="checkbox" name="switch01" data-size="mini" data-on-text="ON" data-off-text="OFF">
+                        </span> 
+                      </div>
+
+                    </div>
+                  <!-- endfilter  --> 
+
                   </td>
                 </tr>
               </table>
             </div><!-- //close box -->
+
+
             <div class="">
               <ul class="pagination">
                 <li><a href="#">&laquo;</a></li>
@@ -130,10 +288,30 @@
       <div class="modal-body">
             
             
-            <i class="fa fa-question-circle fa-2x"></i>
-                <h5> Select your sources for</h5>
+            
+                <h3 class="lead"> Select your sources for</h3>
 
-                <input type="email" class="form-control" id="inputEmail3" placeholder="">
+
+                <hr/>
+                Source 1 URL:
+                <input type="email" class="form-control" id="inputEmail3" placeholder="http://global.myring.io/hilton/roomimages#">
+
+                <br/>
+                Source 2 URL:
+                <input type="email" class="form-control" id="inputEmail3" placeholder="http://global.myring.io/starwood/roomimages#">
+
+                <br/>
+                Source 3 URL:
+                <input type="email" class="form-control" id="inputEmail3" placeholder="http://global.myring.io/bestwest/roomimages#">
+
+                <br/>
+                <button type="button" class="btn btn-default btn-xs" style="float:right;">
+                  New Source
+                </button>
+
+                <hr/>
+                Save this source combo as:
+                <input type="email" class="form-control" id="inputEmail3" placeholder="DC Hotel Chains">
 
 
 

@@ -4,13 +4,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    {% block title %}<title>Sapo</title>{% endblock %}
+    <title>{% block title %} <!-- INSECT TITLE HERE  -->{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Required -->
     <link href="{% static 'css/normalize.css' %}" rel="stylesheet" type="text/css" media="screen">
     <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css" media="screen">
     <link href="{% static 'css/ring1.css' %}" rel="stylesheet" type="text/css" media="screen">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 
@@ -94,98 +95,63 @@ mixpanel.init("XXXX");mixpanel.track("Landing Page View", {"URL": window.locatio
 
                   <a href="00" type="button" class="btn btn-default rn-tx1"><img style="width:25px;" class="img-circle" src="{% static 'images/mtvlogo.jpg' %}" >@Hilton_Times_Square</a>
 
-                 
-
-                              {% block crumb %}
-                              {% endblock crumb%}
+                    {% block crumbs %}
+                        <!-- INSECT CRUMBS HERE  -->
+                    {% endblock %}
 
                 </div>
             </div>
         </div>
     </div>
-</section>        
-{% block content %}
+</section> 
+
+<section class="bp-20 p-50">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-9">  
+        
+        {% block content %}
+          <!-- INSECT CONTENT HERE -->
+
+        {% endblock %}
+
+      </div> <!-- close 9 -->
+      <div class="col-sm-3">
+        <div class="rn-box-space">
+          <strong>ToolBar </strong>
+
+          <button type="button" class="btn btn-default btn-xs" style="float:right;">
+          <i class="fa fa-question-circle"></i>
+          </button>
+          <button type="button" class="btn btn-success btn-xs" style="float:right;">
+          <i class="fa fa-wrench"></i>
+          </button>
+
+        </div>
+        <div class="rn-box-content">
+
+          {% block tools %}
+                <!-- INSECT TOOLS HERE -->
+                <p>Tools, one click away</p>
+
+          {% endblock %}
+          
+
+        </div>
+      </div>    
+    </div>
+  </div>
+</section>       
 
 
 
+
+{% block modals %}
+
+<!-- INSECT MODALS HERE -->
 
 {% endblock %}
-
-
-
-<!-- Modal used in various views, prototype mode, everything is the same -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Are You sure you want to let this resource go?</h4>
-      </div>
-      <div class="modal-body">
-            
-
-            <div style="float:left; padding:0 10px;">
-            <img style="width:150px;" src="{% static 'images/bea.jpg' %}" class="img-thumbnail" >
-            </div>
-
-            <dl class="">
-                  <dt>Name:</dt>
-                  <dd>Sunsetroom1.jpg</dd>
-
-                  <dt>Format:</dt>
-                  <dd>JPG</dd>
-
-                  <dt>Width:</dt>
-                  <dd>900px</dd>
-
-                  <dt>Height:</dt>
-                  <dd>400px</dd>
-
-            </dl>
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Nope</button>
-        <button type="button" class="btn btn-primary">Yes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- modal end -->
-
-<!-- Modal used in various views, prototype mode, everything is the same -->
-<div class="modal fade" id="helpmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Help</h4>
-      </div>
-      <div class="modal-body">
-            
-            
-            <i class="fa fa-question-circle fa-4x"></i>
-                <h5> How can we help you ?</h5>
-
-                <input type="email" class="form-control" id="inputEmail3" placeholder="">
-
-
-
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" class="btn btn-primary">Search</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- modal end -->
 
 
 
@@ -196,6 +162,7 @@ mixpanel.init("XXXX");mixpanel.track("Landing Page View", {"URL": window.locatio
         <p class="text-muted">Footer</p>
       </div>
     </div> -->
+    
 <!-- JavaScript -->
 <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
 <script type="text/javascript" src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
@@ -220,6 +187,7 @@ mixpanel.init("XXXX");mixpanel.track("Landing Page View", {"URL": window.locatio
 <script type="text/javascript" src="{% static 'assets/switch/js/bootstrap-switch.js' %}"></script>
 <script type="text/javascript" src="{% static 'assets/switch/js/initswitch.js' %}"></script>
 <script type="text/javascript" src="{% static 'assets/switch/js/highlight.js' %}"></script>
+<!-- <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script> -->
 
 
 <script type="text/javascript" src="{% static 'js/jquery.wp.custom.js' %}"></script>

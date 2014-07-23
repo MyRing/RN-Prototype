@@ -1,7 +1,7 @@
 {% extends 'index.html' %}
 {% load static %}
 
-{% block title %}<title>Avispa</title>{% endblock %}
+{% block title %} Avispa {% endblock %}
 
 {% block crumb %}
 <button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button>
@@ -115,8 +115,86 @@
 </section>
 
 
+{% endblock %}
 
 
 
+{% block modals %}
+
+<!-- //////////////////////////////////////////////////////////////////////////////-->
+<!-- AVISPA MODALS-->
+<!-- //////////////////////////////////////////////////////////////////////////////-->
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Are You sure you want to let this resource go?</h4>
+      </div>
+      <div class="modal-body">
+            
+
+            <div style="float:left; padding:0 10px;">
+            <img style="width:150px;" src="{% static 'images/bea.jpg' %}" class="img-thumbnail" >
+            </div>
+
+            <dl class="">
+                  <dt>Name:</dt>
+                  <dd>Sunsetroom1.jpg</dd>
+
+                  <dt>Format:</dt>
+                  <dd>JPG</dd>
+
+                  <dt>Width:</dt>
+                  <dd>900px</dd>
+
+                  <dt>Height:</dt>
+                  <dd>400px</dd>
+
+            </dl>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nope</button>
+        <button type="button" class="btn btn-primary">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="helpmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Help</h4>
+      </div>
+      <div class="modal-body">
+            
+            
+            <i class="fa fa-question-circle fa-4x"></i>
+                <h5> How can we help you ?</h5>
+
+                <input type="email" class="form-control" id="inputEmail3" placeholder="">
+
+
+
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal end -->
 
 {% endblock %}
