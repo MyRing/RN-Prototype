@@ -32,6 +32,7 @@ urlpatterns = patterns('',
     url(r'^papalotl/07$', TemplateView.as_view(template_name="papalotl/pap-07.html"), name=""),
     url(r'^papalotl/08$', TemplateView.as_view(template_name="papalotl/pap-08.html"), name=""),
     url(r'^papalotl/09$', TemplateView.as_view(template_name="papalotl/pap-09.html"), name=""),
+    url(r'^papalotl/15$', TemplateView.as_view(template_name="papalotl/pap-15.html"), name=""),
 
 #OTROS
     url(r'^pricing/$', TemplateView.as_view(template_name="pricing.html"), name="pricing"),

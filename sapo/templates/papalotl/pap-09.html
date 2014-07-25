@@ -1,3 +1,316 @@
-{% extends 'papalotl/pap-A.html' %}
+{% extends 'index.html' %}
 {% load static %}
+
+{% block title %} PAPALOTL {% endblock %}
+
+{% block crumb %}
+<button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button>
+<button type="button" class="btn btn-default">pap-A</button>
+
+{% endblock crumb%}
+
+{% block content %}
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="rn-box-title">
+
+      <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#helpmodal">
+       <i class="fa fa-question-circle"></i>
+      </button>
+      
+
+      <h2 class="title">New Filter</h2>
+      <span class="lean">Step 2 : Output</span>
+    </div>
+    <div class="rn-box-space">  
+          <div class="row">
+            <div class="col-sm-12 text-left">
+              Name: Search by Metadata <br/>
+              Ring: &deg;RoomImages
+            </div>
+
+            <hr/>
+          </div> 
+    </div>
+
+    <div class="rn-box-content">
+
+      <h2>Available Inputs</h2>
+          <table class="table table-striped">
+            <tr>
+              <td>ImageFormat</td>
+              <td>String</td>
+              <td>Yes</td>
+
+            </tr>
+            <tr>
+              <td>Max-Width</td>
+              <td>Web Length</td>
+              <td>No</td>
+
+            </tr>
+            <tr>
+              <td>Max-Width</td>
+              <td>Web Length</td>
+              <td>No</td>
+
+            </tr>
+            <tr>
+              <td>Max-Width</td>
+              <td>Web Length</td>
+              <td>No</td>
+
+            </tr>
+          </table>
+
+      <hr/>
+      <h2>Map()</h2>
+
+        <div class="well textcodearea">
+          image_format  -->  ImageVersions.format <br/>
+          Max_Width  -->  ImageVersions.width<br/>
+          image_format  -->  ImageVersions.format <br/>
+          Max_Width  -->  ImageVersions.width<br/>
+          image_format  -->  ImageVersions.format <br/>
+          Max_Width  -->  ImageVersions.width<br/>
+          image_format  -->  ImageVersions.format <br/>
+          Max_Width  -->  ImageVersions.width<br/>
+        </div>
+
+      <hr/>  
+      <h2>Reduce()</h2>
+
+      <div class="well textcodearea">
+          Foreach (Results as Results){
+          if(Result.imageVersion.DataTaken > Created After && )
+          }
+      </div>
+      <hr/>
+      <button class="btn btn-success" data-toggle="modal" > Save Filter </button>
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#screen13"> Test </button>
+
+      <br/><br/> 
+
+    </div><!-- //close box -->
+
+
+    
+  </div><!-- close 12 -->   
+</div> <!-- close row -->
+
+
+
+
+{% endblock %}
+
+{% block modals %}
+
+<!-- //////////////////////////////////////////////////////////////////////////////-->
+<!-- PAPALOTL-09 MODALS-->
+<!-- //////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+<!--  SCREEN 13 -->
+<div class="modal fade" id="screen13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <!-- CONTENT - PAPER:13  //////////////////////////////////////////////// -->
+          In order to test, you need at least one source from ring: &deg;RoomImages
+          <br/>
+
+          <strong>Source 1 URL:</strong>
+          <input type="email" class="form-control" id="" placeholder="http://g.myring.io/hilton/RoomImages#">
+
+          <a href="" > + Add another source to the test.</a>
+          <br/><br/>
+
+          <div><input type="checkbox" name="X" value="X" data-on-text="ON" data-off-text="OFF" data-size="mini" checked> <span class="text-muted">Remember sources</span></div>
+
+          <hr/>
+          <button type="button" class="btn btn-default btn-xs " data-dismiss="modal" data-toggle="modal" data-target="#screen14"> RunTest </button>
+
+        <!-- CONTENT //////////////////////////////////////////////// -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  SCREEN 14 -->
+<div class="modal fade" id="screen14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+
+      <!-- CONTENT - PAPER:14 //////////////////////////////////////////////// -->
+          
+          <h2>SEARCH</h2>
+          <h3>Ring:</h3> &deg;RoomImages
+          <h3>Filter:</h3> Search by Metadata         
+
+          <hr/>
+            <form role="form">
+              <div class="form-group">
+                <label>Field X</label>
+                <input type="text" class="form-control" id="" placeholder="XX">
+              </div>
+              <div class="form-group">
+                <label >Field Y</label>
+                <input type="text" class="form-control" id="" placeholder="YY">
+              </div>
+              <div class="form-group">
+                <label >Field Z</label>
+                <input type="text" class="form-control" id="" placeholder="YY">
+              </div>
+            </form>
+
+            <hr/>
+
+            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal" data-toggle="modal" data-target="#screen15"> RunTest </button>
+
+        <!-- CONTENT //////////////////////////////////////// -->    
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL SCREEN 15 -->
+<div class="modal fade" id="screen15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          
+
+        <!-- CONTENT - PAPER:15  //////////////////////////////////////////////// -->
+
+        <strong>Ring:</strong>  &deg;RoomImages  <br/>
+        <strong>Filter:</strong> Search by Metadata <br/>
+
+
+        <hr/>
+
+        <div class="btn-group pull-right">
+          
+          <button type="button" class="btn btn-warning" data-dismiss="modal" data-toggle="modal" data-target="#screen16"> {JSON} </button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal" data-toggle="modal" data-target="#screen17"> [CSV] </button>
+        </div>
+
+        <h4>234 Found</h4>
+
+        <hr/>
+
+          <table class="table table-striped">
+            <tr>
+              <th>Room N</th>
+              <th>Desc</th>
+              <th>URL</th>
+
+            </tr>
+            <tr>
+              <td>Deluxe</td>
+              <td>This is a Victorian</td>
+              <td>http://img.hilton.com/9378</td>
+
+            </tr>
+            <tr>
+              <td>Standard</td>
+              <td>The Fantastic..</td>
+              <td>http://img.hilton.com/9378</td>
+
+            </tr>
+            <tr>
+              <td>Double X</td>
+              <td>This room has a..</td>
+              <td>http://img.hilton.com/9378</td>
+
+            </tr>
+          </table>
+        <!-- CONTENT //////////////////////////////////////////////// -->
+        
+        </hr>
+        <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!--  SCREEN 16 -->
+<div class="modal fade" id="screen16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- CONTENT- PAPER:16 //////////////////////////////////////////////// -->
+          <div class="well">
+            
+            <pre class="prettyprint">
+              class Voila {
+public:
+  // Voila
+  static const string VOILA = "Voila";
+
+  // will not interfere with embedded tags. xxxx
+}
+            </pre>
+            
+          </div>
+
+          <button type="button" class="btn btn-info btn-xs" data-dismiss="modal" data-toggle="modal" data-target="#screen15"> Go Back </button>
+          <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close</button>
+
+        <!-- CONTENT //////////////////////////////////////////////// -->    
+            
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  SCREEN 17 -->
+<div class="modal fade" id="screen17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          
+        <!-- CONTENT- PAPER:16 //////////////////////////////////////////////// -->  
+
+          Do you want to download the CSV File of this search?
+
+          <hr/>
+
+<button type="button" class="btn btn-info btn-xs pull-right" data-dismiss="modal" data-toggle="modal" data-target="#screen15"> Go Back </button>
+
+          <button type="button" class="btn btn-primary">Download</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+
+
+        <!-- CONTENT //////////////////////////////////////////////// -->     
+    
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+      
+
+
+{% endblock %}
+<!-- modal end -->
+
 
