@@ -1,7 +1,7 @@
 {% extends 'index.html' %}
 {% load static %}
 
-{% block title %}<title>Avispa</title>{% endblock %}
+{% block title %}Avispa{% endblock %}
 
 {% block crumb %}
 <!-- <button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button> -->
@@ -12,152 +12,58 @@
 {% block content %}
 
 
-<!-- START NEW CONTENT --> 
+<!-- THIS CONTENT WILL FALL INTO THE MAIN BOX --> 
 
 
-<section class="bp-20 p-50">
-    <div class="container">
+
         <div class="row">
-            
-            <div class="col-md-9">  
-
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="rn-box-title">
-
-                        <strong> <!-- Ring owner  -->{% block form-0 %}{% endblock%}  </strong> 
+          <div class="col-sm-12">
+            <div class="rn-box-title">
+                <strong> <!-- Ring owner  -->{% block form-0 %}{% endblock%}  </strong> 
                 
-                        
-
-                            <button type="button" class="btn btn-default btn-xs pull-right">
-                            <i class="fa fa-question-circle"></i>
-                            </button>
-                            
-
-                            
-
-                        </div>
-                        <div class="rn-box-solo">
-
-
-                        
-                        <div class="row">
-                                <div class="col-sm-3">
-
-{% block form-1 %}
-                         <!--     RESOURCE  PIC-->
-{% endblock%}
-
-                                </div>
-                                <div class="col-sm-9" >
-                                    
-
-                                        
-
-{% block form-2 %}
-                          <!--     RESOURCE  DESCRIPTION -->
-
-{% endblock%}
-
-                                        
-                                    
-                                </div>
-                                
-                            </div> 
-
-
-                        
-                         
-
-                        </div>
-
-                        <div class="rn-box-content">
-                            
-                            
-
-                        
-                         
-                            <form class="form-horizontal" role="form">
-                                <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-2 control-label">Summary</label>
-                                    <div class="col-sm-10">
-
-{% block form-3 %}
-                         <!--    SUMMARY-->
-{% endblock%}
-
-                                    </div>
-                                </div>
-                                
-
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
-                                    <div class="col-sm-10">
-                                       
-{% block form-4 %}  
-                          <!--    DESCRIPTION-->   
-{% endblock%}
-
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-2 control-label">Tags</label>
-                                    <div class="col-sm-10">
-                                    
-{% block form-5 %}
-                          <!--    TAGS--> 
-{% endblock%}
-
-
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-2 control-label"></label>
-                                    <div class="col-sm-10">
-
-{% block form-6 %}
-                           <!--  BUTTONS--> 
-{% endblock%}
-
-
-                                    </div>
-                                </div>
-
-                            </form>     
-  
-                        </div><!-- //close box content -->
-                        
-                    </div><!-- close 12 -->   
-                </div> <!-- close row -->
-
-            </div> <!-- close 9 -->
-            <div class="col-sm-3">
-                <div class="rn-box-space">
-                            <strong>ToolBar </strong>
-
-                            <button type="button" class="btn btn-default btn-xs" style="float:right;">
-                            <i class="fa fa-question-circle"></i>
-                            </button>
-                            <button type="button" class="btn btn-success btn-xs" style="float:right;">
-                            <i class="fa fa-wrench"></i>
-                            </button>
-
+                  <button type="button" class="btn btn-default btn-xs pull-right">
+                    <i class="fa fa-question-circle"></i>
+                  </button>
+            </div>
+            <div class="rn-box-solo">         
+              <div class="row">
+                <div class="col-sm-3">
+                  {% block form-1 %}<!-- RESOURCE  PIC-->{% endblock%}
                 </div>
-                <div class="rn-box-content">
-                
-                    <p>Tools, one click away</p>
-
+                <div class="col-sm-9" >
+                  {% block form-2 %}<!-- RESOURCE DESCRIPTION -->{% endblock%}
                 </div>
-            </div>    
-
-        </div>
-    </div>
-</section>
-
-
-
-
+              </div> 
+            </div>
+            <div class="rn-box-content">
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Summary</label>
+                  <div class="col-sm-10">
+                      {% block form-3 %}<!--    SUMMARY-->{% endblock%}
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+                  <div class="col-sm-10">
+                    {% block form-4 %}<!--    DESCRIPTION-->{% endblock%}
+                  </div>
+                </div>              
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Tags</label>
+                  <div class="col-sm-10">
+                    {% block form-5 %}<!--    TAGS--> {% endblock%}
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label"></label>
+                  <div class="col-sm-10">
+                    {% block form-6 %}<!--  BUTTONS--> {% endblock%}
+                  </div>
+                </div>
+              </form>     
+            </div><!-- //close box content -->
+          </div><!-- close 12 -->   
+        </div> <!-- close row -->
 
 {% endblock content%}

@@ -24,14 +24,9 @@ urlpatterns = patterns('',
 #PAP
     url(r'^papalotl/00$', TemplateView.as_view(template_name="papalotl/pap-00.html"), name=""),
     url(r'^papalotl/01$', TemplateView.as_view(template_name="papalotl/pap-01.html"), name=""),
-    url(r'^papalotl/02$', TemplateView.as_view(template_name="papalotl/pap-02.html"), name=""),
-    url(r'^papalotl/03$', TemplateView.as_view(template_name="papalotl/pap-03.html"), name=""),
     url(r'^papalotl/04$', TemplateView.as_view(template_name="papalotl/pap-04.html"), name=""),
-    url(r'^papalotl/05$', TemplateView.as_view(template_name="papalotl/pap-05.html"), name=""),
-    url(r'^papalotl/06$', TemplateView.as_view(template_name="papalotl/pap-06.html"), name=""),
-    url(r'^papalotl/07$', TemplateView.as_view(template_name="papalotl/pap-07.html"), name=""),
-    url(r'^papalotl/08$', TemplateView.as_view(template_name="papalotl/pap-08.html"), name=""),
     url(r'^papalotl/09$', TemplateView.as_view(template_name="papalotl/pap-09.html"), name=""),
+    url(r'^papalotl/15$', TemplateView.as_view(template_name="papalotl/pap-15.html"), name=""),
 
 #OTROS
     url(r'^pricing/$', TemplateView.as_view(template_name="pricing.html"), name="pricing"),
