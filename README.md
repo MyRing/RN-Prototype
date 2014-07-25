@@ -3,8 +3,12 @@
 ___
 
 
-Name		  | Paper        | HTML
+Name		  | Paper        | HTML		| Access
 ------------ | ------------- | ------------
-Avispa		 | ✓ | ✓
-Papalotl | ✓ | -
-Cicada | ✓ | -
+Avispa		 | ✓ | ✓ | /avi/00
+Papalotl | ✓ | ✓ | /pap/00
+Oruga | ✓ | ✓ | /oru/00
+Catarina | ✓ | - | /cat/00
+Chapulin | ✓ | - | 
+Abeja | ✓ | - | 
+

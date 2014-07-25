@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<h3>Choose visualization</h3>
+<hr/>
+
+	<div class="lead">Do you have an specific visualization you want to use?</div>
+
+		<input type="text" class="form-control" placeholder="URL OF VISUALIZATION">
+
+		<hr/>
+
+		<br/><br/><br/>
+
+		<div class="lead">If not, you can choose from this menu</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'images/d3-a.png' %}" alt="...">
+      <div class="caption">
+        <h3>SUNBURST</h3>
+        <p class="rn-t3">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="02" class="btn btn-primary" role="button">use</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'images/d3-b.png' %}" alt="...">
+      <div class="caption">
+        <h3>SUNBURST</h3>
+        <p class="rn-t3">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="02" class="btn btn-primary" role="button">use</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'images/d3-d.png' %}" alt="...">
+      <div class="caption">
+        <h3>SUNBURST</h3>
+        <p class="rn-t3">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="02" class="btn btn-primary" role="button">use</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
