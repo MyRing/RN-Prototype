@@ -1,0 +1,138 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+
+<div class="col-md-7">
+
+	<div class="">
+		<h2><span class="label label-warning">MYSQL</span> <i class="fa fa-arrow-right"></i> <span class="label label-success">RING</span></h2>
+	</div>	
+		<hr/>
+
+	<h2> &deg;Hotels </h2>
+	<table class="table table-striped">
+		<tr>
+			<th> Exist</th>
+			<th> MySQL Name</th>
+			<th> as</th>
+			<th> Ring Name</th>
+		</tr>
+
+		<!-- NEW ROW -->
+		<tr>
+			<td>
+				<h4>
+				<input type="checkbox" name="X" value="X" data-on-text="&#x2714;" data-off-text="OFF" data-size="mini" checked>
+				</h4>
+			</td>
+			<td>
+				<h4><span class="label label-warning"> V.vendorName</span><span class="text-muted"></span></h4>
+			</td>
+			<td>
+				<h4><i class="fa fa-arrow-right"></i></h4>
+			</td>
+			<td>
+				<h4><span class="label label-success">Name</span></h4>
+			</td>
+		</tr>
+		<!-- NEW ROW -->
+		<tr>
+			<td>
+				<h4>
+				<input type="checkbox" name="X" value="X" data-on-text="&#x2714;" data-off-text="OFF" data-size="mini">
+				</h4>
+			</td>
+			<td>
+				<h4><span class="label label-warning"> V.vendorName</span><span class="text-muted"></span></h4>
+			</td>
+			<td>
+				<h4><i class="fa fa-arrow-right"></i></h4>
+			</td>
+			<td>
+				<h4><span class="label label-success">Name</span></h4>
+			</td>
+		</tr>
+		<!-- NEW ROW -->
+		<tr>
+			<td>
+				<h4>
+				<input type="checkbox" name="X" value="X" data-on-text="&#x2714;" data-off-text="OFF" data-size="mini">
+				</h4>
+			</td>
+			<td>
+				<h4><span class="label label-warning"> V.vendorName</span><span class="text-muted"></span></h4>
+			</td>
+			<td>
+				<h4><i class="fa fa-arrow-right"></i></h4>
+			</td>
+			<td>
+				<h4><span class="label label-success">Name</span></h4>
+			</td>
+		</tr>
+		<!-- NEW ROW -->
+		<tr>
+			<td>
+				<h4>
+				<input type="checkbox" name="X" value="X" data-on-text="&#x2714;" data-off-text="OFF" data-size="mini" checked>
+				</h4>
+			</td>
+			<td>
+				<h4><span class="label label-warning"> V.vendorName</span><span class="text-muted"></span></h4>
+			</td>
+			<td>
+				<h4><i class="fa fa-arrow-right"></i></h4>
+			</td>
+			<td>
+				<h4><span class="label label-success">Name</span></h4>
+			</td>
+		</tr>
+
+
+
+	</table>
+	<hr/>
+	<a href="06" class="btn btn-primary pull-right">next</a>
+
+</div>
+
+<div class="col-md-5">
+
+
+		
+  <div class="tree well rn-t3">
+  	<span class="label label-success">Ring</span>
+    <ul>
+      <li>
+         <span> <h4 >&deg;HotelRooms</h4></span>
+        <ul>
+        	<li><span>Name</span></li>
+        	<li><span>Address</span></li>
+        	<li><span>City</span></li>
+        	<li><span>State</span></li>
+        	<li><span>IATA Code</span></li>
+          <li> <!-- Asset  -->
+          	<span> Telephones</span>
+            <ul>
+              <li>
+                <span> Telephone1</span>
+              </li>
+              <li>
+                <span> Telephone2</span>
+              </li>
+            </ul>
+          </li>
+          <li> <span>Description</span></li>
+     		</ul>
+    	</li>
+    </ul>		
+	</div>
+
+
+
+</div>	
+
+
+{% endblock %}
+

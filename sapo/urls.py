@@ -34,6 +34,25 @@ urlpatterns = patterns('',
     url(r'^papalotl/09$', TemplateView.as_view(template_name="papalotl/pap-09.html"), name=""),
     url(r'^papalotl/15$', TemplateView.as_view(template_name="papalotl/pap-15.html"), name=""),
 
+
+#ORU
+    url(r'^oruga/00$', TemplateView.as_view(template_name="oruga/oru-00.html"), name=""),
+    url(r'^oruga/01$', TemplateView.as_view(template_name="oruga/oru-01.html"), name=""),
+    url(r'^oruga/02$', TemplateView.as_view(template_name="oruga/oru-02.html"), name=""),
+    url(r'^oruga/03$', TemplateView.as_view(template_name="oruga/oru-03.html"), name=""),
+    url(r'^oruga/04$', TemplateView.as_view(template_name="oruga/oru-04.html"), name=""),
+    url(r'^oruga/05$', TemplateView.as_view(template_name="oruga/oru-05.html"), name=""),
+    url(r'^oruga/06$', TemplateView.as_view(template_name="oruga/oru-06.html"), name=""),
+    url(r'^oruga/07$', TemplateView.as_view(template_name="oruga/oru-07.html"), name=""),
+    url(r'^oruga/08$', TemplateView.as_view(template_name="oruga/oru-08.html"), name=""),
+    url(r'^oruga/09$', TemplateView.as_view(template_name="oruga/oru-09.html"), name=""),
+    url(r'^oruga/10$', TemplateView.as_view(template_name="oruga/oru-10.html"), name=""),
+    url(r'^oruga/11$', TemplateView.as_view(template_name="oruga/oru-11.html"), name=""),
+    url(r'^oruga/12$', TemplateView.as_view(template_name="oruga/oru-12.html"), name=""),
+
+
+
+
 #OTROS
     url(r'^pricing/$', TemplateView.as_view(template_name="pricing.html"), name="pricing"),
     url(r'^tos/$', TemplateView.as_view(template_name="tos.html"), name="tos"),

@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+<h3>In &deg;Hotels you can:</h3>
+<hr/>
+<form role="form" action="06">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" checked> Read Data
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" checked> Update Data
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Insert New Data
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" checked> Delete Data
+
+    </label>
+  </div>
+
+<hr/>
+  <button type="submit" class="btn btn-default">OK</button>
+</form>
+
+
+
+
+
+{% endblock %}

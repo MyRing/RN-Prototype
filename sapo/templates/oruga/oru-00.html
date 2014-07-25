@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+{% block title %}   ORUGA 00   {% endblock %}
+
+{% block content %}
+
+<h3>Please select your translator </h3>
+
+<hr/>
+
+<div class="checkbox">
+    <label>
+      <input type="radio" name="translator" value="01" data-on-color="warning" data-size="mini" data-on-text="&#x2714;" data-off-text="-">  MySQL to Rings 
+    </label>
+</div>
+<div class="checkbox">
+    <label>
+      <input type="radio" name="translator" value="01" data-on-color="warning" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> CSV to Rings
+    </label>
+</div>
+<div class="checkbox">
+    <label>
+      <input type="radio" name="translator" value="01" data-on-color="warning" data-size="mini" data-on-text="&#x2714;" data-off-text="-"> MongoDB to Rings
+    </label>
+</div>
+<div class="checkbox">
+    <label>
+      <input type="radio" name="translator" value="01" data-on-color="warning" data-size="mini" data-on-text="&#x2714;" data-off-text="-"> LogFile to Rings
+    </label>
+</div>
+<div class="checkbox">
+    <label>
+      <input type="radio" name="translator" value="01" data-on-color="warning" data-size="mini" data-on-text="&#x2714;" data-off-text="-"> API to Rings
+    </label>
+</div>
+
+<hr/>
+
+<a href="01" class="btn btn-primary">next</a>
+
+
+
+{% endblock %}
