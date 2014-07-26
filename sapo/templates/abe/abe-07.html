@@ -1,0 +1,79 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+<h3>Stats</h3>
+<hr/>
+
+	<div class="lead">Your Data in the Global Rings</div>
+
+
+	<h2>35K</h2>
+	Total Views
+
+	<br/>
+	<span class="lead">7K Hotels <br/> 28K Hotel Images</span>
+
+			<!-- <div class="piedemo clearfix">
+			  <div class="chart">
+			    <div class="percentage" data-percent="55"><span>55</span>%</div>
+			    <div class="label">New visitors</div>
+			  </div>
+			  <div class="chart">
+			    <div class="percentage" data-percent="21"><span>21</span>%</div>
+			    <div class="label">Bounce rate</div>
+			  </div>
+			</div>
+
+			<a href="#" class="button updatePieCharts">Update pie charts</a> -->
+
+		<br/>
+	
+	<h2>210 K</h2>
+	<span class="lead">Times your images have been saved</span>
+
+
+	<h2>Users</h2>
+	Main users
+	<div class="progress">
+	  <div class="progress-bar progress-bar-success" style="width: 35%">
+	    <span class="sr-only">US</span>
+	  </div>
+	  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+	    <span class="sr-only">France</span>
+	  </div>
+	  <div class="progress-bar progress-bar-danger" style="width: 10%">
+	    <span class="sr-only">Germany</span>
+	  </div>
+	</div>
+
+
+
+
+<hr/>
+<a href="00" class="btn btn-primary">Go to start</a>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script type="text/javascript">
+
+    var initCharts = function() {
+      var charts = $('.percentage');
+      charts.easyPieChart({
+        animate: 1000,
+        onStep: function(value) {
+          this.$el.find('span').text(~~value);
+        }
+      });
+      $('.updatePieCharts').on('click', function(e) {
+        e.preventDefault();
+        charts.each(function() {
+          $(this).data('easyPieChart').update(Math.floor(100*Math.random()));
+        });
+      });
+    }
+</script>
+{% endblock %}

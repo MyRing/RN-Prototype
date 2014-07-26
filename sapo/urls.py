@@ -60,6 +60,16 @@ urlpatterns = patterns('',
 
 
 
+#ABEJA
+    url(r'^abe/00$', TemplateView.as_view(template_name="abe/abe-00.html"), name=""),
+    url(r'^abe/01$', TemplateView.as_view(template_name="abe/abe-01.html"), name=""),
+    url(r'^abe/02$', TemplateView.as_view(template_name="abe/abe-02.html"), name=""),
+    url(r'^abe/03$', TemplateView.as_view(template_name="abe/abe-03.html"), name=""),
+    url(r'^abe/03$', TemplateView.as_view(template_name="abe/abe-03.html"), name=""),
+    url(r'^abe/04$', TemplateView.as_view(template_name="abe/abe-04.html"), name=""),
+    url(r'^abe/05$', TemplateView.as_view(template_name="abe/abe-05.html"), name=""),
+    url(r'^abe/06$', TemplateView.as_view(template_name="abe/abe-06.html"), name=""),
+    url(r'^abe/07$', TemplateView.as_view(template_name="abe/abe-07.html"), name=""),
 
 
 

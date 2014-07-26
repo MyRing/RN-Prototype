@@ -1,0 +1,131 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+<h3>API: HiltonMaterial4OTA</h3>
+<hr/>
+
+<div class="row">
+	<div class="col-sm-5"> <!--  FIRST COLUMN -->
+		
+		<span>This API is : </span><br/> 
+		<input type="checkbox" name="translator" value="01" data-on-color="warning" data-on-text="Public" data-off-text="Private" checked> 
+		
+		<br/><br/>
+
+		<div class="input-group">
+	    <div class="input-group-addon"><i class="fa fa-users"></i> Version:</div>
+	    <input class="form-control" type="text" placeholder="1.2">
+
+	  </div>
+	  <i class="fa fa-question-circle"></i>
+
+		<br/>
+		<div>Description:</div>
+			<textarea class="form-control" rows="2"></textarea>
+
+			
+		<div>Whitelist:</div>
+			<textarea class="form-control" rows="2"></textarea>	
+
+		<hr/>
+			<div class="lead"><i class="fa fa-user"></i> Users</div>
+			<input type="checkbox" name="credentials" value="01" data-on-color="warning" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> 
+			<span>Everybody can create credentials</span> 
+				<br/><br/>
+
+			<input type="checkbox" name="credentials" value="01" data-on-color="warning" data-size="mini" data-on-text="&#x2714;" data-off-text="-"> 
+			<span>User approval by me </span> 
+				
+			<hr/>
+			<div class="lead"> <i class="fa fa-warning"></i> Alerts</div>
+			<div class="well">
+				Alert me when any user makes more than
+				<input type="text" value=" 3000"> <br/>calls per 
+				<select name="">
+					<option value="">minute</option>
+					<option value="">hour</option>
+					<option value="">day</option>
+					
+				</select>
+				 
+			</div>
+					<hr/>
+		<a href="03" class="btn btn-primary">CREATE API</a>
+
+
+	</div>
+	<div class="col-sm-7"> <!--  SECOND COLUMN -->
+		
+		<span class="lead">Include in the response</span>
+
+		  <div class="tree well rn-t3">
+		  	<span class="label label-success">Ring</span>
+		    <ul>
+		      <li> <!-- FIRST RING -->
+		        <span> <h4 ><i class="fa fa-circle-thin fa-2x"></i> &deg;HotelRooms</h4></span>
+		        <ul>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Name </span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Address </span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> City </span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" > State </span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" > IATA Code </span></li>
+
+		          <li> 
+		          	<span> Telephones</span>
+		            <ul>
+		              <li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Telephone 1 </span>
+		              </li>
+		              <li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Telephone 2</span>
+		              </li>
+		            </ul>
+		          </li>
+		          <li> <span>Description</span></li>
+		     		</ul>
+		    	</li>
+
+		    	<li>  <!-- SECOND RING -->
+		         <span> <h4 ><i class="fa fa-circle-thin fa-2x"></i> &deg;Hoteles</h4></span>
+		        <ul>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Name </span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Address </span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> City </span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" > State </span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" > IATA Code </span></li>
+
+		          <li> 
+		          	<span> Telephones</span>
+		            <ul>
+		              <li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Telephone 1 </span>
+		              </li>
+		              <li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Telephone 2</span>
+		              </li>
+		            </ul>
+		          </li>
+		          <li> <span>Description</span></li>
+		     		</ul>
+		    	</li>
+
+		    	<li>  <!-- SEARCH BY METADATA-->
+		         <span class="label label-warning"> <h4> Metadata </h4></span>
+		        <ul>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Room N</span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> Desc</span></li>
+		        	<li><span><input type="checkbox" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked> URL </span></li>
+		     		</ul>
+		    	</li>
+
+		    </ul>		
+			</div>
+
+
+
+	</div>
+</div>
+
+
+
+
+
+{% endblock %}

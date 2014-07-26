@@ -116,9 +116,11 @@ mixpanel.init("XXXX");mixpanel.track("Landing Page View", {"URL": window.locatio
 
         {% endblock %}
 
+        <hr/>
       </div> <!-- close 9 -->
+
       <div class="col-sm-3">
-        <div class="rn-box-space">
+        <div class="rn-box-title">
           <strong>ToolBar </strong>
 
           <button type="button" class="btn btn-default btn-xs" style="float:right;">
@@ -197,6 +199,10 @@ mixpanel.init("XXXX");mixpanel.track("Landing Page View", {"URL": window.locatio
 <script src="{% static 'assets/fraction/jquery.fractionslider.min.js' %}"></script>
 <script src="{% static 'assets/fraction/jquery.fractionslider.init.js' %}"></script>
 <script src="{% static 'assets/fraction/jquery.fractionslider.init.js' %}"></script>
+
+
+{% block scripts %}
+{% endblock %}
 
 <!-- 
 <script>

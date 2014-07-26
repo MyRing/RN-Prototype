@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+<h3>Global Rings</h3>
+<hr/>
+	<p>You are already pushing data to the Global Rings:</p>
+	
+	<div class="lead"> <i class="fa fa-circle-thin fa-2x"></i> &deg;HotelRooms</div>
+	<div class="lead"> <i class="fa fa-circle-thin fa-2x"></i> &deg;HotelImages</div>
+	
+
+	<p>Do you want to start pushing data from another Ring?</p>
+
+	<input type="checkbox" name="a" value="" data-size="mini" data-on-text="&#x2714;" data-off-text="-" checked>
+	<span class="lead">  &deg;Cuartos hotel</span> &nbsp;&nbsp;&nbsp;
+	
+	<br/>
+	<input type="checkbox" name="a" value="" data-size="mini" data-on-text="&#x2714;" data-off-text="-">
+	<span class="lead">  &deg;MisHoteles</span> &nbsp;&nbsp;&nbsp;
+	
+
+<hr/>
+<a href="06" class="btn btn-primary">OK</a>
+
+
+{% endblock %}
