@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^theme$', TemplateView.as_view(template_name="ringtheme.html"), name=""),
     url(r'^theme2$', TemplateView.as_view(template_name="ringtheme2.html"), name=""),
 #AVI
+    url(r'^avi/in$', TemplateView.as_view(template_name="avi/avi-in.html"), name=""),
     url(r'^avi/00$', TemplateView.as_view(template_name="avi/avi-00.html"), name=""),
     url(r'^avi/01$', TemplateView.as_view(template_name="avi/avi-01.html"), name=""),
     url(r'^avi/02$', TemplateView.as_view(template_name="avi/avi-02.html"), name=""),
@@ -22,6 +23,7 @@ urlpatterns = patterns('',
 
 
 #PAP
+    url(r'^pap/in$', TemplateView.as_view(template_name="pap/pap-in.html"), name=""),
     url(r'^pap/00$', TemplateView.as_view(template_name="pap/pap-00.html"), name=""),
     url(r'^pap/01$', TemplateView.as_view(template_name="pap/pap-01.html"), name=""),
     url(r'^pap/02$', TemplateView.as_view(template_name="pap/pap-02.html"), name=""),
@@ -36,6 +38,7 @@ urlpatterns = patterns('',
 
 
 #ORU
+    url(r'^oru/in$', TemplateView.as_view(template_name="oru/oru-in.html"), name=""),
     url(r'^oru/00$', TemplateView.as_view(template_name="oru/oru-00.html"), name=""),
     url(r'^oru/01$', TemplateView.as_view(template_name="oru/oru-01.html"), name=""),
     url(r'^oru/02$', TemplateView.as_view(template_name="oru/oru-02.html"), name=""),
@@ -53,6 +56,7 @@ urlpatterns = patterns('',
 
 
 #CAT
+    url(r'^cat/in$', TemplateView.as_view(template_name="cat/cat-in.html"), name=""),
     url(r'^cat/00$', TemplateView.as_view(template_name="cat/cat-00.html"), name=""),
     url(r'^cat/01$', TemplateView.as_view(template_name="cat/cat-01.html"), name=""),
     url(r'^cat/02$', TemplateView.as_view(template_name="cat/cat-02.html"), name=""),
@@ -61,6 +65,7 @@ urlpatterns = patterns('',
 
 
 #ABEJA
+    url(r'^abe/in$', TemplateView.as_view(template_name="abe/abe-in.html"), name=""),
     url(r'^abe/00$', TemplateView.as_view(template_name="abe/abe-00.html"), name=""),
     url(r'^abe/01$', TemplateView.as_view(template_name="abe/abe-01.html"), name=""),
     url(r'^abe/02$', TemplateView.as_view(template_name="abe/abe-02.html"), name=""),
@@ -73,6 +78,7 @@ urlpatterns = patterns('',
 
 
 #CHAPULIN
+    url(r'^cha/in$', TemplateView.as_view(template_name="cha/cha-in.html"), name=""),
     url(r'^cha/00$', TemplateView.as_view(template_name="cha/cha-00.html"), name=""),
     url(r'^cha/01$', TemplateView.as_view(template_name="cha/cha-01.html"), name=""),
     url(r'^cha/02$', TemplateView.as_view(template_name="cha/cha-02.html"), name=""),

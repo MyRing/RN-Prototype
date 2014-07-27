@@ -27,82 +27,84 @@ mixpanel.init("XXXX");mixpanel.track("Landing Page View", {"URL": window.locatio
 <body>
 
 <header>
-    <div class="topbar topbar-white" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                
+  <div class="topbar topbar-white" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
 
-                
-                    <img style="width:30px; margin:5px;" src="{% static 'images/myringpurple.png' %}"  alt="Rings">
-                    <a href="00">
-                        <span class="rn-clear">MY</span><span class="rn-black">RING </span>
-                    </a>
-                
-                
-            </div>
-            <div class="navbar-collapse collapse">
-                <!-- Note: you can use <li class="hidden-sm"> to hide things -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#contact">Blog</a></li>
-                    <li><a href="#contact">Git</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Prototypes &nbsp; <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Avispa</a></li>
-                        <li><a href="#">Cicada</a></li>
-                        <li><a href="#">Abeja</a></li>
-                        <li><a href="#">Oruga</a></li>
-                        <li><a href="#">Chapulin</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#"><i class="fa fa-comment"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cog"></i></a></li>
-                    <li><a href="#"><i class="fa fa-sign-out"></i></a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
+        <img style="width:30px; margin:5px;" src="{% static 'images/myringpurple.png' %}"  alt="Rings">
+        <a href="00">
+            <span class="rn-clear">MY</span><span class="rn-black">RING </span>
+        </a>  
+      </div>
+        <div class="navbar-collapse collapse">
+            <!-- Note: you can use <li class="hidden-sm"> to hide things -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#contact">Blog</a></li>
+                <li><a href="#contact">Git</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Prototypes &nbsp; <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/avi/in">Avispa</a></li>
+                    <li><a href="/pap/in">Papalotl</a></li>
+                    <li><a href="/oru/in">Oruga</a></li>
+                    <li><a href="/cat/in">Catarina</a></li>
+                    <li><a href="/cha/in">Chapulin</a></li>
+                    <li><a href="/abe/in">Abeja</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-comment"></i></a></li>
+                <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
+  </div>
 </header>
 
 <br/> 
 
 <section class="bp-20 p-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
 
-                            <div class="pull-right rn-t3 text-right">
-                                <i class="fa fa-dot-circle-o fa-2x" style="color:#CCC; padding:0 10px;"></i>
-                            </div>
-                        
-                            <div class="pull-right rn-t3 text-right"><strong>Friday July 19, 2014</strong><br/>
-                            <span class="rn-clear">Resources: <br/>Global: 1,345 / Local: 34,543 </span>
-                            </div>
+        <div class="pull-right rn-t3 text-right">
+            <i class="fa fa-dot-circle-o fa-2x" style="color:#CCC; padding:0 10px;"></i>
+        </div>
+    
+        <div class="pull-right rn-t3 text-right"><strong>Friday July 19, 2014</strong><br/>
+        <span class="rn-clear">Resources: <br/>Global: 1,345 / Local: 34,543 </span>
+        </div>
+
+        <br/>
                             
                 
 
-                <div class="btn-group" style="padding:10px;">
-                  <a href="00" type="button" class="btn btn-default rn-tx1"><img style="width:25px;" src="{% static 'images/bea.jpg' %}" class="img-circle" >  Beavis69</a>
+        <div class="btn-group" style="padding:10px;">
+          
+          <a href="00" type="button" class="btn btn-info rn-tx1 btn-crumb"> {% block insect %}{% endblock %} </a>
 
-                  <button type="button" class="btn btn-default bt-crumb"><i class="fa fa-chevron-right"></i></button>
+          <a href="00" type="button" class="btn btn-default rn-tx1"><img style="width:25px;" src="{% static 'images/bea.jpg' %}" class="img-circle" >  User</a>
 
-                  <a href="00" type="button" class="btn btn-default rn-tx1"><img style="width:25px;" class="img-circle" src="{% static 'images/mtvlogo.jpg' %}" >@Hilton_Times_Square</a>
+          <div class="label label-crumb"> <h5><i class="fa fa-chevron-right rn-white"></i></h5></div>
 
-                    {% block crumbs %}
-                        <!-- INSECT CRUMBS HERE  -->
-                    {% endblock %}
+          <a href="00" type="button" class="btn btn-default rn-tx1"><img style="width:25px;" class="img-circle" src="{% static 'images/mtvlogo.jpg' %}" >@Hilton_Times_Square</a>
 
-                </div>
-            </div>
+            {% block crumbs %}
+                <!-- INSECT CRUMBS HERE  -->
+            {% endblock %}
+
         </div>
+      </div>
     </div>
+  </div>
 </section> 
 
 <section class="bp-20 p-50">

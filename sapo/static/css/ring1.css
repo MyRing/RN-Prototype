@@ -33,17 +33,15 @@ a:hover{color:#000; text-decoration:underline;  -o-transition:.3s; -ms-transitio
 
 .rn-pad20{padding:20px;}
 
+.label-crumb{height:44px; background-color:#CCC;float:left;}
 
 
 .bp-20{padding:0 0 5px 0 }
 .ring-bc{color:#D9E021; font-weight:bold; }
 .rn-bold{font-weight:bold; }
 
-.bt-crumb{margin: 0px 0; background-color:#CCC;}
-.bt-crumb:hover {
-margin-top: 0px;
-background-color:#CCC;
-}
+.btn-crumb{height:44px;}
+
 
 .btn-vader{margin: 0px 0; background-color:#000; color:#CCC;}
 .btn-vader:hover {
@@ -92,6 +90,7 @@ background-color: #CCC;
 .rn-gray{color:gray;}
 .rn-clear{color:#CCC;}
 .rn-black{color:#000;}
+.rn-white{color:#FFF;}
 
 .btn-fix1{min-width:120px;}
 
@@ -185,7 +184,7 @@ position: relative;
 /* Navigation Bar */
 .topbar{margin:0; padding:0; background:#EAEAEA; border:0; border-bottom:0px solid #fff; border-radius:0; z-index:1000; }
 .topbar .navbar-nav > li > a{color:#222; padding:5px 16px; font-size:15px; font-weight:normal;}
-.topbar .navbar-nav > li > a.dropdown-form-toggle{color:#fff; background:#D9E021; padding:14px 16px; margin-top:14px; margin-right:4px; font-size:15px; font-weight:normal;}
+.topbar .navbar-nav > li > a.dropdown-form-toggle{color:#fff; background:#CCC; padding:14px 16px; margin-top:14px; margin-right:4px; font-size:15px; font-weight:normal;}
 .topbar .navbar-nav > li > a:hover,
 .topbar .navbar-nav > li > a:focus {color:#666; background-color:#999;}
 
@@ -200,7 +199,7 @@ position: relative;
 .topbar .navbar-toggle {border-color:#fff; margin-top:10px;}
 .topbar .navbar-toggle .icon-bar {background-color: #fff;}
 .topbar .navbar-toggle:hover,
-.topbar .navbar-toggle:focus{background-color:#D9E021; border-color:#D9E021;}
+.topbar .navbar-toggle:focus{background-color:#CCC; border-color:#CACACA;}
 .topbar .navbar-toggle:hover .icon-bar,
 .topbar .navbar-toggle:focus .icon-bar{background-color:#FFF;}
 .topbar .navbar-toggle:hover .icon-search,
@@ -214,23 +213,23 @@ position: relative;
 
 .topbar .navbar-nav > .open > a,
 .topbar .navbar-nav > .open > a:hover,
-.topbar .navbar-nav > .open > a:focus {color: #666;background-color: #D9E021;}
+.topbar .navbar-nav > .open > a:focus {color: #666;background-color: #CCC;}
 
 .topbar .navbar-nav > .open > a .caret,
 .topbar .navbar-nav > .open > a:hover .caret,
 .topbar .navbar-nav > .open > a:focus .caret {border-top-color:#FFF; border-bottom-color:#FFF;}
 .topbar .navbar-nav > .dropdown > a .caret {border-top-color:#4c4c4c; border-bottom-color:#4c4c4c;}
 
-.topbar .dropdown-menu{min-width:180px; background:#FFF; border:0; border-top:1px solid #D9E021; border-bottom:3px solid #D9E021; border-radius:0;}
+.topbar .dropdown-menu{min-width:180px; background:#FFF; border:0; border-top:1px solid #CACACA; border-bottom:3px solid #CACACA; border-radius:0;}
 .topbar .dropdown-menu:after, .arrow_box:before {bottom:100%;left:86%; border:solid transparent; content:" "; height:0; width:0; position: absolute; pointer-events:none;}
 .topbar .dropdown-menu:after{border-color:rgba(231, 76, 60, 0); border-bottom-color:#fff; border-width:10px; margin-left:0;}
 .topbar .dropdown-menu:before{border-color: rgba(231, 76, 60, 0); border-bottom-color:#fff; border-width: 10px; margin-left:0;}
-.topbar .dropdown-menu-user:after{border-color:rgba(231, 76, 60, 0); border-bottom-color:#D9E021; border-width:10px; margin-left:24px;}
-.topbar .dropdown-menu-user:before{border-color: rgba(231, 76, 60, 0); border-bottom-color:#D9E021; border-width: 10px; margin-left:-10px;}
+.topbar .dropdown-menu-user:after{border-color:rgba(231, 76, 60, 0); border-bottom-color:#CACACA; border-width:10px; margin-left:24px;}
+.topbar .dropdown-menu-user:before{border-color: rgba(231, 76, 60, 0); border-bottom-color:#CACACA; border-width: 10px; margin-left:-10px;}
 .topbar .dropdown-menu > li{border-bottom:1px solid #eee;}
 .topbar .dropdown-menu > li:last-child{border:0;}
 .topbar .dropdown-menu > li > a{color:#4c4c4c; padding:8px 15px;}
-.topbar .dropdown-menu > li > a:hover{background:#D9E021; color:#FFF;}
+.topbar .dropdown-menu > li > a:hover{background:#CACACA; color:#FFF;}
 .topbar .dropdown-menu label.checkbox{color:#4c4c4c;}
 .topbar .dropdown-form h4{margin:0; padding:15px 15px 5px 15px; color:#FFF;}
 .topbar h4{color:#FFF;}
