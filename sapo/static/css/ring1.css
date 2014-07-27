@@ -33,6 +33,20 @@ a:hover{color:#000; text-decoration:underline;  -o-transition:.3s; -ms-transitio
 
 .rn-pad20{padding:20px;}
 
+
+.rn-p5{padding:5px;}
+.rn-p10{padding:10px;}
+.rn-p20{padding:20px;}
+
+.rn-hp5{padding:0 5px;}
+.rn-hp10{padding:0 10px;}
+.rn-hp20{padding:0 20px;}
+
+.rn-vp5{padding:5px 0;}
+.rn-vp10{padding:10px 0;}
+.rn-vp20{padding:20px 0;}
+
+
 .label-crumb{height:44px; background-color:#CCC;float:left;}
 
 
@@ -43,7 +57,7 @@ a:hover{color:#000; text-decoration:underline;  -o-transition:.3s; -ms-transitio
 .btn-crumb{height:44px;}
 
 
-.btn-vader{margin: 0px 0; background-color:#000; color:#CCC;}
+.btn-vader{margin: 0px 0; background-color:#666; color:#CCC;}
 .btn-vader:hover {
 margin-top: 0px;
 background-color:#999;
