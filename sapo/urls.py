@@ -72,6 +72,35 @@ urlpatterns = patterns('',
     url(r'^abe/07$', TemplateView.as_view(template_name="abe/abe-07.html"), name=""),
 
 
+#CHAPULIN
+    url(r'^cha/00$', TemplateView.as_view(template_name="cha/cha-00.html"), name=""),
+    url(r'^cha/01$', TemplateView.as_view(template_name="cha/cha-01.html"), name=""),
+    url(r'^cha/02$', TemplateView.as_view(template_name="cha/cha-02.html"), name=""),
+    url(r'^cha/03$', TemplateView.as_view(template_name="cha/cha-03.html"), name=""),
+    url(r'^cha/04$', TemplateView.as_view(template_name="cha/cha-04.html"), name=""),
+    url(r'^cha/05$', TemplateView.as_view(template_name="cha/cha-05.html"), name=""),
+    url(r'^cha/06$', TemplateView.as_view(template_name="cha/cha-06.html"), name=""),
+    url(r'^cha/07$', TemplateView.as_view(template_name="cha/cha-07.html"), name=""),
+    url(r'^cha/08$', TemplateView.as_view(template_name="cha/cha-08.html"), name=""),
+    url(r'^cha/09$', TemplateView.as_view(template_name="cha/cha-09.html"), name=""),
+    url(r'^cha/10$', TemplateView.as_view(template_name="cha/cha-10.html"), name=""),
+    url(r'^cha/11$', TemplateView.as_view(template_name="cha/cha-11.html"), name=""),
+    url(r'^cha/12$', TemplateView.as_view(template_name="cha/cha-12.html"), name=""),
+    url(r'^cha/13$', TemplateView.as_view(template_name="cha/cha-13.html"), name=""),
+    url(r'^cha/14$', TemplateView.as_view(template_name="cha/cha-14.html"), name=""),
+    url(r'^cha/15$', TemplateView.as_view(template_name="cha/cha-15.html"), name=""),
+    url(r'^cha/16$', TemplateView.as_view(template_name="cha/cha-16.html"), name=""),
+    url(r'^cha/17$', TemplateView.as_view(template_name="cha/cha-17.html"), name=""),
+    url(r'^cha/18$', TemplateView.as_view(template_name="cha/cha-18.html"), name=""),
+    url(r'^cha/19$', TemplateView.as_view(template_name="cha/cha-19.html"), name=""),
+    url(r'^cha/20$', TemplateView.as_view(template_name="cha/cha-20.html"), name=""),
+    url(r'^cha/21$', TemplateView.as_view(template_name="cha/cha-21.html"), name=""),
+    url(r'^cha/22$', TemplateView.as_view(template_name="cha/cha-22.html"), name=""),
+    url(r'^cha/23$', TemplateView.as_view(template_name="cha/cha-23.html"), name=""),
+
+
+
+
 
 #OTROS
     url(r'^pricing/$', TemplateView.as_view(template_name="pricing.html"), name="pricing"),

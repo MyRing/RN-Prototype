@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<h3>Results</h3>
+<hr/>
+
+	<div class="lead">Search Results</div>
+
+<!-- SEPARATION -->
+
+<div class="rn-box-space">
+  <div class="btn-group pull-right">
+      <a href="01" type="button" class="btn btn-primary btn-xs">
+      <i class="fa fa-th-list"></i>
+      </a>
+      <a href="03" type="button" class="btn btn-default btn-xs">
+          <i class="fa fa-th-large"></i>
+      </a>
+  </div>
+	<strong>26 Results</strong>
+</div>
+
+<!-- RESULT LIST START -->
+
+<div class="rn-box-content">
+		<a href="02" class="btn btn-primary">
+      <img class="img-responsive rn-img-result" src="{% static 'images/bike.gif' %}"/>
+      <br/>
+      <p>&deg;Bikes</p>
+    </a> 
+    <a href="02" class="btn btn-default">
+      <img class="img-responsive rn-img-result" src="{% static 'images/bike.gif' %}"/>
+      <br/>
+      <p>&deg;Biclas</p>
+    </a> 
+    <a href="02" class="btn btn-default">
+      <img class="img-responsive rn-img-result" src="{% static 'images/bike.gif' %}"/>
+      <br/>
+      <p>&deg;Biclas de Montana</p>
+    </a> 
+    <a href="02" class="btn btn-default">
+      <img class="img-responsive rn-img-result" src="{% static 'images/bike.gif' %}"/>
+      <br/>
+      <p>&deg;Bici</p>
+    </a> 
+    <a href="02" class="btn btn-default">
+      <img class="img-responsive rn-img-result" src="{% static 'images/bike.gif' %}"/>
+      <br/>
+      <p>&deg;Bike</p>
+    </a> 
+
+
+
+
+    
+</div><!-- //close box content -->
+
+{% endblock %}

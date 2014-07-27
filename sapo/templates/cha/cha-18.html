@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+<h2><span class="label label-m">M</span></h2><h3>Links for &deg;Bike Parts</h3>
+<hr/>
+
+	<div class="row">
+		<div class="col-sm-6">
+	
+			<div class="lead">This Ring seems to be:</div>
+			<select class="form-control">
+				<option>Same as</option>
+				<option>Related to</option>
+				<option>A subgroup of</option>
+				<option>A parent of</option>
+			</select>
+			<input type="text" class="form-control" placeholder="&deg;PartesMecanicas">
+
+			<br/>
+			<div class="lead">Because of its:</div>
+			<select class="form-control">
+				<option>Data Structure</option>
+				<option>Data Content</option>
+
+			</select>
+
+			<br/>
+			<a href="02" class="btn btn-primary pull-right"> Create Link</a>
+
+
+
+		</div>
+		<div class="col-sm-6">
+
+		</div>
+	</div>
+
+{% endblock %}

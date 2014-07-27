@@ -73,6 +73,11 @@ background-color: #CCC;
 
 }
 
+.label-m{background-color:red;}
+.label-c{background-color:orange;}
+.label-x{background-color:purple;}
+.label-h{background-color:#0FAA9B;}
+
 .rn-b1{font-size: 20px;}
 .rn-b2{font-size: 25px;}
 .rn-b3{font-size: 30px;}
@@ -87,6 +92,29 @@ background-color: #CCC;
 .rn-gray{color:gray;}
 .rn-clear{color:#CCC;}
 .rn-black{color:#000;}
+
+.btn-fix1{min-width:120px;}
+
+.rn-img-result{
+width:100px; height:100px;
+}
+
+.rn-box-result{
+	
+margin:10px;
+border-style: solid;
+border-color: #ddd;
+border-width: 2px;
+border-radius: 4px;
+-webkit-box-shadow: none;
+box-shadow: none;
+background-color:#CCC; 
+padding: 10px;
+margin: 0;
+float: left;
+color:black;
+font-weight:bold;
+}
 
 .rn-box-title{
 margin-right: 0;

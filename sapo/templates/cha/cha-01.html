@@ -1,0 +1,55 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+
+<h3>Results</h3>
+<hr/>
+
+	<div class="lead">Search Results</div>
+
+<!-- SEPARATION -->
+
+<div class="rn-box-space">
+  <div class="btn-group pull-right">
+      <a href="01" type="button" class="btn btn-default btn-xs">
+      <i class="fa fa-th-list"></i>
+      </a>
+      <a href="03" type="button" class="btn btn-primary btn-xs">
+          <i class="fa fa-th-large"></i>
+      </a>
+  </div>
+	<strong>26 Results</strong>
+</div>
+
+<!-- RESULT LIST START -->
+
+<div class="rn-box-content">
+	<table class="table table-striped">
+		<tr>
+			<th>Items</th>
+			<th>Name</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td> <span class="lead">25k </span></td>
+			<td> <div class="lead"> <i class="fa fa-circle-thin fa-2x"></i> &deg;RaceBicycles</div></td>
+			<td> <a href="02" class="btn btn-default">view</a></td>
+		</tr>
+		<tr>
+			<td> <span class="lead">60k </span></td>
+			<td> <div class="lead"> <i class="fa fa-circle-thin fa-2x"></i> &deg;Bicicletas de montana</div></td>
+			<td> <a href="02" class="btn btn-default">view</a></td>
+		</tr>
+		<tr>
+			<td> <span class="lead">3k </span></td>
+			<td> <div class="lead"> <i class="fa fa-circle-thin fa-2x"></i> &deg;BikeParts</div></td>
+			<td> <a href="02" class="btn btn-default">view</a></td>
+		</tr>
+	</table>
+    
+</div><!-- //close box content -->
+
+
+
+{% endblock %}
