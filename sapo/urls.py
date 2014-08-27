@@ -115,4 +115,11 @@ urlpatterns = patterns('',
     url(r'^aup/$', TemplateView.as_view(template_name="aup.html"), name="aup"),
     url(r'^404error\.html$', TemplateView.as_view(template_name="404.html"), name="404"),
     url(r'^admin/', include(admin.site.urls)),
+
+
+#AVISPACOUCH
+    url(r'^post/home/$', 'RN-Prototype.avispa.views.home'),
+    url(r'^post/(?P<post_id>\w*)/$', 'RN-Prototype.avispa.views.view_post'),
+    url(r'^post/edit/(?P<post_id>\w*)/$', 'django_blogapp.blog_app.views.edit_post'),
+
 )
